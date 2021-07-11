@@ -20,8 +20,22 @@ puts ("Il y a #{arr2.length} handle qui comptent 5 caracteres")
 
 # q 4 
 p("Combien commencent par une majuscule (première lettre juste après le @) ?")
-arr3=arr0.map.select { |x| x =~ /[A-Z]/ }
+arr3=arr0.map.select { |x| x] =~ /[A-Z]/ }
 puts ("Il y a #{arr3.length} handle qui commencent par une letre majuscule ")
+
+p("Deuxième méthode")
+arr3bis=[]
+    382.times do |i|
+        if  arr0[i][1]=~ /[A-Z]/
+            arr3bis[i]=arr0[i]
+           
+       end
+    end
+    arr3bis=arr3bis.select{|i|i!=nil}
+    p arr3bis.length
+ p   arr3bis 
+
+
 
 # q 5 
 puts ("Trie la liste de handle par ordre alphabétique. ")
